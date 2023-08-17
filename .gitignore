@@ -1,0 +1,13 @@
+# node
+node_modules/
+
+# hardhat
+artifacts/
+cache/
+
+# firebase
+.firebase/
+firebase-debug.log
+
+# user config
+.env

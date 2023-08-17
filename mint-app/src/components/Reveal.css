@@ -1,0 +1,36 @@
+.Reveal {
+  padding: 20px;
+  padding-top: 0px;
+  height: 100%;
+}
+
+.RevealTitle {
+  font-family: "Druk Wide Web", Courier;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.RevealSub {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.RevealSub .Buttons {
+}
+
+.RevealSub .TransactionLink {
+  width: auto;
+}
+
+@media only screen and (max-width: 580px) {
+  .RevealSub .Buttons {
+    margin-top: 80px;
+  }
+
+  .RevealSub .TransactionLink {
+    font-size: 16px;
+  }
+}

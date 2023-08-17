@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/reveal/static/css/main.45df2ee3.css",
+    "main.js": "/reveal/static/js/main.c5e4f5ed.js",
+    "static/js/23.0c7e48a5.chunk.js": "/reveal/static/js/23.0c7e48a5.chunk.js",
+    "static/js/102.31c6cdc5.chunk.js": "/reveal/static/js/102.31c6cdc5.chunk.js",
+    "static/js/27.a4498e2b.chunk.js": "/reveal/static/js/27.a4498e2b.chunk.js",
+    "static/media/nightcard.jpg": "/reveal/static/media/nightcard.5765b2a06c706e24b224.jpg",
+    "static/media/logo.svg": "/reveal/static/media/logo.2baa426fd253ed49b2e5.svg",
+    "static/media/corner-orange.svg": "/reveal/static/media/corner-orange.1e7e8dc346ebed0e6590.svg",
+    "index.html": "/reveal/index.html",
+    "static/media/window-big.svg": "/reveal/static/media/window-big.8f8dd728ee0abb11c2d2.svg",
+    "static/media/window.svg": "/reveal/static/media/window.4c441f2acd2c6df0331f.svg"
+  },
+  "entrypoints": [
+    "static/css/main.45df2ee3.css",
+    "static/js/main.c5e4f5ed.js"
+  ]
+}

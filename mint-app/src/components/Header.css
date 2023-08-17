@@ -1,0 +1,23 @@
+.Header {
+  color: var(--light-grey);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 0px;
+  height: 58px;
+  display: flex;
+}
+
+.Header .Logo {
+  height: 58px;
+  width: 200px;
+  background-image: url("../../public/images/logo.svg");
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 580px) {
+  .Header {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

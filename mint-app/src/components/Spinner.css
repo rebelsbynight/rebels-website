@@ -1,0 +1,37 @@
+.SpinnerWrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.SpinnerBg,
+.SpinnerRing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  background-image: url("../../public/images/spinner-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.SpinnerRing {
+  background-image: url("../../public/images/spinner-ring.svg");
+  animation-duration: 0.5s;
+  animation-name: rotationner;
+  animation-timing-function: steps(13, start);
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotationner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

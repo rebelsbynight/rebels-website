@@ -1,0 +1,8 @@
+{
+    "name": "Honorary Rebels",
+    "description": "By Night Labs.",
+    "image": "https://rebels.art/assets/honoraryrebels.png",
+    "external_link": "https://rebels.art/",
+    "seller_fee_basis_points": 750,
+    "fee_recipient": "0x19776383961f72FD00f159f5Db5cf48DbfA89546"
+}

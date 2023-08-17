@@ -1,0 +1,12 @@
+[
+  {
+    "merkleRoot": "0x63e8eba0572133b167332f202682f42667a157e047782a89be3256ef7eb31aa3",
+    "mintPrice": 3000000000000000,
+    "mintLimit": 5
+  },
+  {
+    "merkleRoot": "0x39e4a0d21e874db4fe3cf1c551b490e06cf112c80c9cd9f4f988f884527d044d",
+    "mintPrice": 6000000000000000,
+    "mintLimit": 3
+  }
+]

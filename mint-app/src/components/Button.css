@@ -1,0 +1,40 @@
+.Button {
+  border-radius: 6px;
+  background-color: var(--orange);
+  color: var(--dark);
+  font-family: "Druk Wide Web", Courier;
+  font-size: 26px;
+  border: 1px solid var(--orange);
+  padding: 2px 40px 2px 40px;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 48px;
+  text-decoration: none;
+}
+
+.Button:hover {
+  background-color: unset;
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.Button:active {
+  color: white;
+  border-color: white;
+}
+
+.Button.disabled {
+  color: var(--light-grey);
+  background-color: var(--dark);
+  border-color: var(--light-grey);
+  opacity: 50%;
+  cursor: auto;
+}
+
+.Button.small {
+  font-size: 18px;
+  padding: 4px 8px 4px 8px;
+  width: fit-content;
+  min-height: unset;
+}

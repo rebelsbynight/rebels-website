@@ -1,0 +1,82 @@
+.TokenSelect {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fonts */
+.label,
+.info,
+.desc,
+.terms {
+  font-family: NectoMono;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.desc,
+.info,
+.label {
+  margin-bottom: 8px;
+}
+.desc {
+  font-weight: lighter;
+  margin-bottom: 28px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.info {
+  color: var(--dark);
+  background-color: var(--light-grey);
+}
+
+.info span {
+  position: relative;
+  padding: 0px 32px;
+}
+
+.info span::before,
+.info span::after {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--dark);
+}
+.info span::after {
+  left: unset;
+  right: 6px;
+}
+
+.label {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  margin-bottom: 28px;
+}
+
+.terms {
+  display: flex;
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: var(--light-grey);
+  font-size: 14px;
+  border: 1px solid var(--dark-grey);
+}
+.terms a {
+  color: var(--light-grey);
+  text-decoration: underline;
+}
+.terms a:hover {
+  color: var(--orange);
+}
+.terms input {
+  margin-right: 8px;
+}

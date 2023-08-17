@@ -1,0 +1,95 @@
+.UserNFTsWrapper {
+  height: 100%;
+  font-family: NectoMono;
+  text-align: center;
+  min-height: 200px;
+  margin-top: 26px;
+}
+.UserNFTsWrapper p {
+  font-family: NectoMono;
+  color: var(--orange);
+  font-weight: normal;
+  text-align: left;
+  font-size: 14px;
+  margin: 0px;
+  padding: 20px;
+}
+.UserNFTs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.UserNFTsScroll {
+  max-height: calc(270px - 70px);
+  overflow: auto;
+  padding: 0px 20px;
+}
+
+.UserNFTs li {
+  border: 1px solid var(--light-grey);
+  color: var(--light-grey);
+  margin-bottom: 8px;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.UserNFTs li:hover {
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+
+.NFTTitle {
+  color: var(--light-grey);
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 4px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+.nftCount {
+  flex-grow: 1;
+  text-align: end;
+  color: var(--orange);
+}
+
+.UserNFTs .newNFT {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  bottom: 0px;
+  color: var(--orange);
+  margin: 8px;
+}
+
+.UserNFTs .nftID {
+  margin: 10px;
+}
+
+.UserNFTs .nftID::before {
+  content: "NIGHTCARD-";
+}
+
+.OpenSeaButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 0px;
+  opacity: 0.5;
+}
+
+.OpenSeaButton:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 580px) {
+  .UserNFTsScroll {
+    max-height: unset;
+    overflow: none;
+    padding: 0px 0px;
+  }
+}

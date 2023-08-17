@@ -1,0 +1,8 @@
+{
+    "name": "Rebels",
+    "description": "Rebels is collection of dynamic NFTs, a canvas for your digital identity. By Night Labs.",
+    "image": "https://rebels.art/images/Logo_Rebels.svg",
+    "external_link": "https://rebels.art/",
+    "seller_fee_basis_points": 750,
+    "fee_recipient": "0x19776383961f72FD00f159f5Db5cf48DbfA89546"
+}

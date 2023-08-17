@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebels - Customization</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/Logo_Rebels.svg"/>
+    <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" href="css/customization.css"/>
+    <script defer type="module" src="js/customization.js"></script>
+    <script src="/dist/customization.bundle.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+      <div class="reveal-button">
+        <p><a class="button" href="index.html">Home</a></p>
+      </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="customization-container">
+            <h1>Customize Your Rebel</h1>
+            <input type="text" id="nft-id" placeholder="Enter Rebel NFT ID">
+            <button id="submit-id">Submit</button>
+            <div id="nft-display" class="nft-image-container">
+                <img id="nft-image" class="nft-image" src="" alt="Rebel NFT">
+            </div>
+            <div>
+                <button id="day-btn">Day</button>
+                <button id="night-btn">Night</button>
+                <button id="ultra-btn">Ultra</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

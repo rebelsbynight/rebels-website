@@ -1,0 +1,147 @@
+.RevealAnimation {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  min-height: 560px;
+  margin-bottom: 20px;
+}
+
+.RevealAnimation video {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 42;
+}
+
+.RevealAnimation .hide {
+  z-index: 0;
+}
+
+.RevealAnimation .image {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 42;
+  opacity: 0;
+  background-color: black;
+  transition: opacity 2s;
+  display: flex;
+  padding: 32px;
+}
+
+.RevealAnimation .image.show {
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+.RevealAnimation .show .NFTImage {
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .RevealAnimation {
+    padding: 0px;
+    height: 200px;
+    width: 100%;
+    min-height: unset;
+    margin-bottom: 8px;
+    position: sticky;
+  }
+}
+
+.NFTName {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-family: "Druk Wide Web", Courier;
+  text-align: center;
+}
+
+.NFTAttributes {
+  color: var(--light-grey);
+  padding: 16px;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.NFTAttribute {
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+  min-width: 50%;
+  height: fit-content;
+}
+
+.NFTAttribute .AttributeName {
+  color: var(--light-grey);
+  text-align: center;
+}
+
+.NFTAttribute .AttributeValue {
+  font-weight: bold;
+  color: var(--orange);
+  text-align: center;
+}
+
+.NFTLeft {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.NFTRight {
+  width: 40%;
+  position: relative;
+}
+
+.NFTLeft .NFTImage {
+  max-width: 90%;
+  max-height: 90%;
+  align-self: center;
+}
+
+.NFTRight .OpenSeaIcon {
+  position: absolute;
+  right: 0px;
+  top: 24px;
+  z-index: 99;
+  opacity: 0.75;
+  transition: all 0.2s ease-out;
+}
+.NFTRight .OpenSeaIcon:hover {
+  opacity: 1;
+}
+
+.NFTLink {
+  display: contents;
+}
+
+@media only screen and (max-width: 580px) {
+  .NFTRight {
+    display: none;
+  }
+  .NFTLeft {
+    width: auto;
+  }
+  .RevealAnimation .image {
+    flex-direction: column;
+  }
+}

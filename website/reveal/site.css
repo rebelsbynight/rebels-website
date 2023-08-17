@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --orange: #e12b00;
+  --dark-grey: #2e2d2c;
+  --light-grey: #808080;
+  --dark: #0a0a0a;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: black;
+  color: #e12b00;
+  background-image: url("./images/bg.png");
+  background-attachment: fixed;
+  height: 100%;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  position: relative;
+}
+@font-face {
+  font-family: NectoMono;
+  font-style: normal;
+  src: url(./fonts/NectoMono-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Druk Wide Web";
+  src: url("./fonts/DrukWide-Medium-Web.woff2") format("woff2"),
+    url("./fonts/DrukWide-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}

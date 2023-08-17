@@ -1,0 +1,26 @@
+{
+  "name": "rebels-customization",
+  "version": "1.0.0",
+  "description": "Customization page for the Rebels NFT project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}

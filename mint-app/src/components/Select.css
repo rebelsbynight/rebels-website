@@ -1,0 +1,121 @@
+.Select {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 128px;
+  border: 1px solid var(--orange);
+  margin-bottom: 28px;
+
+  font-family: NectoMono;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.value {
+  display: flex;
+  height: 100%;
+  width: 108px;
+  font-size: 80px;
+  flex-grow: 6;
+  justify-content: center;
+  align-content: center;
+  padding-top: 12px;
+}
+
+.minus,
+.plus {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 42px;
+  flex-grow: 1;
+}
+
+.minus > div,
+.plus > div {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  font-size: 42px;
+  color: var(--dark);
+  background-color: var(--orange);
+  line-height: 42px;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.2s ease-out;
+}
+
+.minus > div:hover,
+.plus > div:hover {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  font-size: 42px;
+  color: var(--dark);
+  background-color: var(--light-grey);
+  line-height: 42px;
+}
+
+.minus > div:active,
+.plus > div:active {
+  background-color: white;
+}
+
+.minus.disabled > div,
+.plus.disabled > div {
+  cursor: auto;
+  background-color: unset;
+  border: 1px solid var(--light-grey);
+  color: var(--light-grey);
+}
+.minus.disabled > div:hover,
+.plus.disabled > div:hover {
+  cursor: auto;
+  background-color: unset;
+  color: var(--light-grey);
+}
+
+.minus > div::before,
+.plus > div::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  content: "+";
+}
+.minus > div::before {
+  content: "-";
+  top: -4px; /* center "-" */
+}
+
+.progress {
+  position: absolute;
+  bottom: 4px;
+  height: 6px;
+  left: 4px;
+  right: 4px;
+}
+
+.progress .tick {
+  position: absolute;
+  bottom: 4px;
+  height: 6px;
+  left: 4px;
+  right: 4px;
+  background-color: var(--orange);
+  transition: all 0.2s ease-out;
+}
+
+.Select.disabled {
+  pointer-events: none;
+  border: 1px solid var(--dark-grey);
+}
+
+.Select.disabled .minus > div,
+.Select.disabled .plus > div {
+  color: var(--dark-grey);
+  border: 1px solid var(--dark-grey);
+}

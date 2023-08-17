@@ -1,0 +1,26 @@
+.Identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: black;
+  padding: 48px 16px;
+  position: relative;
+}
+
+.idProcto,
+.walPerm {
+  font-family: NectoMono, Courier;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  padding: 2px 20px;
+  margin-bottom: 20px;
+}
+
+.idProcto {
+  border: none;
+  background-color: var(--dark-grey);
+}

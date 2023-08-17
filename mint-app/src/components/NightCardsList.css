@@ -1,0 +1,114 @@
+.NightCards {
+  height: 100%;
+  font-family: NectoMono;
+  text-align: center;
+  min-height: 200px;
+  max-width: 100%;
+  margin-top: 0px;
+}
+.NightCardsList {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.NightCardsListItem {
+  border: 1px solid var(--light-grey);
+  color: white;
+  margin-bottom: 8px;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  min-width: 116px;
+  min-height: 116px;
+  margin: 4px;
+  border-radius: 8px;
+  background-image: url("../../public/images/nightcard.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale();
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.NightCardsListItem:hover {
+  border: 1px solid var(--orange);
+  filter: none;
+}
+
+.NightCardsListItem.selected {
+  border: 1px solid var(--orange);
+  filter: none;
+}
+
+.NightCardsList .nftID {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 14px;
+  font-family: NectoMono;
+}
+
+.NightCardsOpenSeaButton {
+  position: absolute;
+  bottom: 0px;
+  left: 4px;
+  opacity: 0.5;
+  transition: all 0.2s ease-out;
+}
+
+.NightCardsOpenSeaButton:hover {
+  opacity: 0.8;
+}
+
+.NightCardsList .nftReveal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2px 4px;
+  background-color: var(--orange);
+  transform: translate(-50%, -50%);
+  color: var(--dark);
+  font-family: "Druk Wide Web", Courier;
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease-out;
+}
+.NightCardsList .nftReveal:hover {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: var(--dark);
+}
+
+.NightCardsListItem:hover .nftReveal {
+  display: block;
+}
+
+@media only screen and (max-width: 580px) {
+  .NightCards {
+    min-width: 100%;
+    margin: auto;
+  }
+  .NightCardsList {
+    flex-direction: column;
+  }
+  .NightCardsListItem {
+    min-width: 100%;
+    min-height: 34px;
+    background-image: none;
+    margin: 0px;
+    margin-top: 8px;
+  }
+  .NightCardsList .nftReveal {
+    display: block;
+  }
+}

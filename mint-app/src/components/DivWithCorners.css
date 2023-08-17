@@ -1,0 +1,60 @@
+.DivWithCorners {
+  position: relative;
+  margin: 8px;
+  padding: 32px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+}
+.DivWithCorners.fullSize {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.DivWithCorners .cornerTopLeft,
+.DivWithCorners .cornerTopRight,
+.DivWithCorners .cornerBottomLeft,
+.DivWithCorners .cornerBottomRight {
+  position: absolute;
+  background-image: url("../../public/images/corner-orange.svg");
+  background-size: 29px 29px;
+  top: 0px;
+  left: 0px;
+  width: 29px;
+  height: 29px;
+}
+.DivWithCorners .cornerTopLeft {
+  transform: rotate(90deg);
+}
+.DivWithCorners .cornerTopRight {
+  left: unset;
+  right: 0px;
+  transform: rotate(180deg);
+}
+.DivWithCorners .cornerBottomLeft {
+  top: unset;
+  bottom: 0px;
+}
+.DivWithCorners .cornerBottomRight {
+  left: unset;
+  top: unset;
+  right: 0px;
+  bottom: 0px;
+  transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 580px) {
+  .DivWithCorners {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .DivWithCorners.fullSize {
+    width: auto;
+  }
+  .DivWithCorners .cornerTopLeft,
+  .DivWithCorners .cornerTopRight,
+  .DivWithCorners .cornerBottomLeft,
+  .DivWithCorners .cornerBottomRight {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.TransactionLink {
+  border-radius: 6px;
+  background-color: var(--orange);
+  font-family: NectoMono;
+  font-size: 24px;
+  border: 1px solid var(--orange);
+  padding: 8px 40px 8px 40px;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  text-decoration: none;
+  color: var(--dark);
+  text-align: center;
+}
+
+.TransactionLink:hover {
+  background-color: unset;
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.TransactionLink:active {
+  color: white;
+  border-color: white;
+}
+
+.TransactionLink.disabled {
+  color: var(--light-grey);
+  background-color: var(--dark);
+  border-color: var(--light-grey);
+  opacity: 50%;
+  pointer-events: none;
+}
+
+.TransactionLink.small {
+  font-size: 18px;
+  padding: 4px 8px 4px 8px;
+}

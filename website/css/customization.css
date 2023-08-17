@@ -1,0 +1,91 @@
+.customization-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.customization-container input[type="text"] {
+  border: 1px solid #e12b00;
+  background-color: transparent;
+  color: #e12b00;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.customization-container button {
+  border: 1px solid #e12b00;
+  background-color: transparent;
+  color: #e12b00;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.customization-container button:hover {
+  background-color: #e12b00;
+  color: #0a0a0a;
+}
+
+.nft-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 0 auto 2rem auto;
+}
+
+.nft-image {
+  max-width: 100%;
+  max-height: 100%; /* Add max-height to ensure the image doesn't exceed the container's size */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  transition: opacity 0.3s;
+}
+
+.customization-container .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-button {
+  font-family: "Druk Wide Web", Helvetica;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #e12b00;
+  color: #0a0a0a;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-out;
+}
+
+/* Custom home button CSS */
+.home-btn {
+    background-color: #FFAA00;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+}
+
+.home-btn:hover {
+    background-color: #FFBB33;
+    color: #000000;
+}

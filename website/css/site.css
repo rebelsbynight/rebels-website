@@ -1,0 +1,589 @@
+@font-face {
+  font-family: NectoMono;
+  font-style: normal;
+  src: url(../font/NectoMono-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Druk Wide Web";
+  src: url("../font/DrukWide-Medium-Web.woff2") format("woff2"), url("../font/DrukWide-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/bg.png");
+  background-attachment: fixed;
+  background-color: #0a0a0a;
+  font-family: NectoMono, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-family: "Druk Wide Web", Helvetica;
+}
+
+.slides-container {
+  height: 100%;
+  display: flex;
+  flex: none;
+  flex-flow: column nowrap;
+}
+.slide {
+  min-height: 100vh;
+  position: relative;
+  flex-flow: column nowrap;
+}
+
+.slide .inline-menu {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  color: #0a0a0a;
+  background-color: #808080;
+  padding: 2px 8px 2px 24px;
+  max-width: 200px;
+}
+.slide .inline-menu.upndown {
+  padding: 2px 24px;
+}
+.slide .inline-menu.bottom {
+  top: unset;
+  bottom: 50px;
+}
+.slide .inline-menu span {
+  position: relative;
+  user-select: none;
+}
+.slide .inline-menu.upndown span::before {
+  position: absolute;
+  left: -16px;
+  top: 4px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #0a0a0a;
+}
+.slide .inline-menu.upndown span::after {
+  position: absolute;
+  right: -16px;
+  top: 4px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #0a0a0a;
+}
+
+/* 
+    Title slide
+*/
+.title {
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+  cursor: url(../images/cursor.svg) 32 32, auto;
+}
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-header {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.title .typo-title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.title .typo-title img {
+  width: 300px;
+  transform: translate(-46px, -133px);
+}
+.title .opensea-nc-button {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+.title .opensea-rbl-button {
+  position: absolute;
+  bottom: 30px;
+  right: 450px;
+}
+.title .reveal-button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.title .night-button {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+.title .date {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.title .date span {
+  border: solid 1px #e12b00;
+  color: #e12b00;
+  padding: 0px 4px;
+}
+.title .links {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.title .links a {
+  padding: 0px 4px;
+  color: #0a0a0a;
+  background-color: #e12b00;
+  text-transform: uppercase;
+  margin-right: 18px;
+  text-decoration: none;
+}
+.title .links a:last-child {
+  margin-right: 0px;
+}
+
+.title .links a:hover {
+  color: #0a0a0a;
+  background-color: white;
+  transition: all 0.2s ease-out;
+}
+.video-wrapper {
+  background-image: url("../images/frame1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 450px) {
+  .title .typo-title {
+    position: absolute;
+    left: 50%;
+    width: 210px;
+    height: 60px;
+    overflow: hidden;
+    transform: translateX(-50%);
+  }
+  .title .typo-title img {
+    width: 300px;
+    transform: translate(-46px, -133px);
+  }
+  .title .links {
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  .title .links a {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .title .date,
+  .slide .inline-menu {
+    display: none;
+  }
+  .title .opensea-nc-button {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 89px);
+    visibility: hidden;
+  }
+  .title .opensea-rbl-button {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 120px);
+    visibility: hidden;
+  }
+  .title .reveal-button {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 120px);
+  }
+  .title .night-button {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 120px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .slide .inline-menu {
+    display: none;
+  }
+  .video-wrapper {
+    background-image: url("../images/intro.jpg");
+    background-position: 50%;
+  }
+}
+
+.tos {
+  position: absolute;
+  bottom: 4px;
+  color: #e12b00;
+  font-size: 14px;
+  text-decoration: none;
+}
+.tos:hover {
+  color: #808080;
+}
+
+@media only screen and (max-width: 500px) {
+  .project .distribution {
+    display: none;
+  }
+}
+
+.ruler-left {
+  background-image: url("../images/vertical-left.svg");
+  position: sticky;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  left: 0px;
+  top: 0;
+  height: 100vh;
+  left: calc(50% - 370px);
+  width: 36px;
+}
+.ruler-right {
+  background-image: url("../images/vertical-right.svg");
+  position: sticky;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  top: 0;
+  height: 100vh;
+  width: 36px;
+  left: calc(50% + 370px);
+  transform: translateX(100%);
+}
+
+.target-left {
+  background-image: url("../images/circle-left.svg");
+  position: sticky;
+  top: 0;
+  left: -30%;
+  height: 100vh;
+  width: 383px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-size: 383px 617px;
+  border: 1px solid red;
+  display: none;
+}
+
+.target-right {
+  background-image: url("../images/circle-right.svg");
+  position: sticky;
+  top: 0;
+  right: -30%;
+  height: 617px;
+  width: 383px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 60%;
+  display: none;
+}
+
+/* Vision */
+.vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.vision .targets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1021px;
+  width: 1921px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1921px 1021px;
+  background-image: url("../images/vision-targets.svg");
+}
+.vision p {
+  font-size: 12px;
+  text-transform: uppercase;
+  max-width: 440px;
+  text-align: center;
+  color: #808080;
+}
+.vision h3 {
+  font-size: 22px;
+  background-color: #2e2d2c;
+  color: #e12b00;
+  font-family: NectoMono;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0 24px;
+  font-weight: lighter;
+}
+.vision .des-nft {
+  width: 490px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vision .des-nft h1 {
+  color: #e12b00;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vision .des-nft.center {
+  height: 300px;
+  position: relative;
+  padding: 36px;
+}
+.vision .des-nft.center .cornerTopLeft,
+.vision .des-nft.center .cornerTopRight,
+.vision .des-nft.center .cornerBottomLeft,
+.vision .des-nft.center .cornerBottomRight {
+  position: absolute;
+  background-image: url(../images/corner-orange.svg);
+  background-size: 29px 29px;
+  top: 0px;
+  left: 0px;
+  width: 29px;
+  height: 29px;
+}
+.vision .des-nft.center .cornerTopLeft {
+  transform: rotate(90deg);
+}
+.vision .des-nft.center .cornerTopRight {
+  left: unset;
+  right: 0px;
+  transform: rotate(-180deg);
+}
+.vision .des-nft.center .cornerBottomLeft {
+  top: unset;
+  bottom: 0px;
+}
+.vision .des-nft.center .cornerBottomRight {
+  left: unset;
+  top: unset;
+  right: 0px;
+  bottom: 0px;
+  transform: rotate(-90deg);
+}
+.vision .des-nft.center .cornerMidLeft,
+.vision .des-nft.center .cornerMidRight {
+  position: absolute;
+  background-image: url(../images/mid-orange.svg);
+  background-size: 30px 58px;
+  top: 50%;
+  left: 0px;
+  width: 30px;
+  height: 58px;
+}
+.vision .des-nft.center .cornerMidLeft {
+  transform: translateY(-50%);
+}
+.vision .des-nft.center .cornerMidRight {
+  left: unset;
+  right: 0px;
+  bottom: 0px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.vision .des-nft.top {
+  transform: translateY(-3px);
+}
+.vision .des-nft.bottom {
+  transform: translateY(57px);
+}
+.button {
+  border-radius: 6px;
+  background-color: #e12b00;
+  font-family: "Druk Wide Web", Courier;
+  font-size: 26px;
+  border: 1px solid #e12b00;
+  padding: 2px 40px 2px 40px;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 48px;
+  text-decoration: none;
+  color: #0a0a0a;
+}
+.button img {
+  max-height: 26px;
+  margin-bottom: 5px;
+  filter: invert(1);
+}
+.button:hover {
+  background-color: unset;
+  cursor: pointer;
+  color: #e12b00;
+}
+
+.button:active {
+  color: white;
+  border-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .vision .des-nft,
+  .vision .targets {
+    width: 98%;
+    height: auto;
+    background: none;
+  }
+  .vision .des-nft.center {
+    border: none;
+    margin: 32px 0px;
+  }
+  .vision .des-nft.top {
+    transform: none;
+  }
+  .vision .des-nft.bottom {
+    transform: none;
+  }
+  .slide {
+    height: auto;
+    margin-top: 64px;
+  }
+  .slide:first-of-type {
+    margin-top: 0;
+  }
+  .project .desc-wrapper {
+    height: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  .vision {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cornerMidRight,
+  .cornerMidLeft {
+    display: none;
+  }
+
+  .project .desc {
+    padding: 10px;
+  }
+}
+
+.tos-block {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 140px;
+  cursor: auto;
+}
+
+.title.title-tos {
+  max-height: unset;
+  cursor: auto;
+}
+
+.customization-button {
+  font-family: "Druk Wide Web", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--dark);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 120px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.customization {
+  text-align: center;
+  padding: 20px;
+}
+
+#nft-id {
+  font-family: NectoMono, monospace;
+  background-color: var(--dark-grey);
+  color: var(--orange);
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#submit-btn {
+  font-family: "Druk Wide Web", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--dark);
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.nft-display {
+  margin-top: 30px;
+}
+
+.nft-image {
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.day-night-buttons {
+  font-family: "Druk Wide Web", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--dark);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.customization-button:hover {
+  background-color: #fff;
+  color: var(--orange);
+}
+

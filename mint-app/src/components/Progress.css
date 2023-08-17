@@ -1,0 +1,52 @@
+.Progress {
+  border: 1px solid var(--light-grey);
+  padding: 8px;
+  margin: 6px 0px;
+  position: relative;
+}
+
+.rel {
+  width: 100%;
+  position: relative;
+}
+
+.Title {
+  font-family: NectoMono;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--light-grey);
+  margin-bottom: 4px;
+}
+
+.Numbers {
+  position: absolute;
+  color: var(--light-grey);
+  top: 4px;
+  right: 8px;
+}
+
+.Bar {
+  width: 100%;
+  padding: 4px;
+}
+
+.Progress .tick {
+  position: absolute;
+  bottom: 4px;
+  height: 6px;
+  left: 0px;
+  background-color: var(--light-grey);
+  transition: all 0.2s ease-out;
+}
+
+.Progress:hover .Title {
+  color: var(--orange);
+  transition: all 0.2s ease-out;
+}
+.Progress:hover .tick {
+  background-color: var(--orange);
+  transition: all 0.2s ease-out;
+}
+.Progress:hover .Numbers {
+  color: var(--orange);
+}

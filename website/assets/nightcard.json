@@ -1,0 +1,9 @@
+{
+    "name": "Rebels - Night Card",
+    "description": "Use this Night Card to redeem a Rebel NFT.",
+    "background_color": "ffffff",
+    "image": "https://rebels.art/assets/nightcard.png",
+    "animation_url": "https://rebels.art/assets/nightcard.mp4",
+    "external_url": "https://rebels.art/",
+    "attributes": []
+}

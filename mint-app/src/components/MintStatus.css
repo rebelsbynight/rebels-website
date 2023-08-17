@@ -1,0 +1,11 @@
+.MintStatus {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 580px) {
+  .MintStatus {
+    padding: 0px 0px;
+  }
+}

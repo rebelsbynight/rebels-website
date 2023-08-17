@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Rebels</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/Logo_Rebels.svg" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="js/site.js"></script>
+    <script src="https://unpkg.com/enter-view"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body class="body">
+    <section class="slide title" data-section="rebels" id="rebels">
+      <!-- Title slide -->
+      <div id="video" class="video-wrapper"></div>
+      <div class="typo-title">
+        <img src="images/typo-main/1.svg" />
+      </div>
+      <div class="opensea-nc-button">
+        <p><a class="button" target="_" href="https://opensea.io/collection/nightcard"><img src="images/opensea.svg" /> Night Cards</a></p>
+      </div>
+      <div class="opensea-rbl-button">
+        <p><a class="button" target="_" href="https://opensea.io/collection/rebelsbynight"><img src="images/opensea.svg" /> Rebels</a></p>
+      </div>
+      <div class="reveal-button">
+        <p><a class="button" href="https://rebels.art/reveal">Reveal</a></p>
+      </div>
+      <div class="night-button">
+        <p>
+	<a class="button" href="customization.html" >Customization</a>
+	</p>
+      </div>
+      <div class="date">
+        <span>2023</span>
+      </div>
+      <div class="links">
+        <a target="_blank" href="https://discord.gg/rebelsbynight"><i class="lab la-discord"></i> Discord</a>
+        <a target="_blank" href="https://twitter.com/rebelsbynight"><i class="lab la-twitter"></i> Twitter</a>
+        <a target="_blank" href="https://www.instagram.com/rebelsbynight/"
+          ><i class="lab la-instagram"></i> Instagram</a
+        >
+      </div>
+      <div class="inline-menu bottom upndown"><span>scroll down</span></div>
+    </section>
+    <section class="slide vision" data-section="vision" id="vision">
+      <!-- The Vision -->
+      <div class="targets">
+        <div class="des-nft top">
+          <h3>Digital Identity</h3>
+          <p>
+            Our digital identities are composed of experiences, communities we belong to, and our roles in them. Rebels
+            provide a dynamic interface to express our ever-evolving digital selves.
+          </p>
+        </div>
+        <div class="des-nft center">
+          <div class="cornerTopLeft"></div>
+          <div class="cornerTopRight"></div>
+          <div class="cornerMidLeft"></div>
+          <div class="cornerMidRight"></div>
+          <div class="cornerBottomLeft"></div>
+          <div class="cornerBottomRight"></div>
+          <h1>Rebels</h1>
+          <p>
+            Rebels is a next-gen NFT project where art and technology merge to transform the way we share our digital
+            identity.
+          </p>
+          <p>
+            We build and leverage blockchain technology to express your identity through customizable NFTs. Rebels aims
+            to visually bridge and empower communities, creators, and brands.
+          </p>
+          <p><a class="button" href="/gallery">Gallery</a></p>
+        </div>
+        <div class="des-nft bottom">
+          <h3>Customization</h3>
+          <p>
+            Rebels will be customizable, allowing you to display some of the favorite NFTs in your wallet and exclusive
+            patches of our own creation.
+          </p>
+          <p>As a first step towards our mission, our team is building a dynamic NFT patch integration feature.</p>
+        </div>
+      </div>
+            <a class="tos" href="/tos.html">Terms of Service</a>
+    </section>
+    <script>
+      $(window).on("load", function () {
+        if ($(window).width() > 800) {
+          $("#video").html(
+            '<video class="video-header" preload="auto" autoplay loop muted playsinline poster="images/frame1.jpg"><source src="images/intro.m4v" type="video/mp4"></source></video>'
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

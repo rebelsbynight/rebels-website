@@ -1,0 +1,63 @@
+.MintInfos {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  padding: 0px 20px;
+  margin: 6px 0px;
+}
+
+.MintInfosBox {
+  border: 1px solid var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.MintInfosRow {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4px;
+}
+.MintInfosRowLeft {
+  width: 34%;
+  text-align: end;
+  font-weight: bold;
+}
+.MintInfosRowRight {
+  width: 60%;
+}
+
+.MintInfos:hover {
+  opacity: 1;
+}
+
+.EtherLink,
+.MintNetwork {
+  padding-left: 4px;
+  text-decoration: none;
+  color: var(--light-grey);
+  text-transform: none;
+}
+.EtherLink:hover {
+  color: white;
+}
+.EtherLink:active {
+  color: var(--orange);
+}
+
+.EtherLink.Ens {
+  color: var(--orange);
+}
+.EtherLink.Ens:hover {
+  color: white;
+}
+.EtherLink.Ens:active {
+  color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  .MintInfos {
+    padding: 0px 0px;
+  }
+}
